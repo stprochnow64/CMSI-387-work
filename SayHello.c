@@ -7,6 +7,6 @@ int main( int argc, char * argv[] ) {
     char input[25];
     printf( "Enter your name: " );
     name = ( gets( input ) );
-    printf( "/n Hello, %s", input) ;
+    printf( "Hello, %s \n", input) ;
     exit( 0 );
 }
