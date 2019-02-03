@@ -2,7 +2,7 @@
 
 1. **What is the difference between an operating system and middleware?**
 
-Operating systems and middleware are similar in many ways but there are several key differences between them. Middleware operates application programs and the operating system and is like a layer on top of the operating system. It uses services from the operating system and then provides services to the application programs to support controlled interaction. Operating systems and middleware rely upon different underlying providers of low-level services. An operating system provides the services in its API by making use of the features supported by its hardware while middleware provides the services in its API by making us of the features supported by its underlying operating system.
+Operating systems and middleware are similar in many ways but there are several key differences between them. Middleware occupies a position between application programs and the operating system, and is like a layer on top of the operating system. It uses services from the operating system and then provides services to the application programs to support controlled interaction. Operating systems and middleware rely upon different underlying providers of low-level services. An operating system provides the services in its API by making use of the features supported by its hardware while middleware provides the services in its API by making us of the features supported by its underlying operating system.
 
 2. **What is the relationship between threads and processes?**
 
