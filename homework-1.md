@@ -23,3 +23,5 @@
 ![gantt231](https://user-images.githubusercontent.com/31746937/52171972-45ca5900-271b-11e9-94d0-bfde4e416427.jpg)
 
 ![gantt312](https://user-images.githubusercontent.com/31746937/52171978-68f50880-271b-11e9-9683-569d1b948f3d.jpg)
+
+![gantt321](https://user-images.githubusercontent.com/31746937/52171991-99d53d80-271b-11e9-894a-e04aaa3d168f.jpg)
