@@ -11,3 +11,6 @@
    b) Thread A's disk operation takes 10ms. 1 of those ms is used to switch from A to B and then the other 9ms are used for running thread B. When A's disk operation is complete it switches back to thread A, which takes 1ms. Then the computation on thread A takes an additional 1ms. This happens 100 times. 10 + 1 + 1 = 12 and 12 * 100 = 1200ms. Once thread A's loop has been completed, there is still some of thread B left to run because 9 * 100 is only 900ms and B takes 1000ms to complete. We must switch back to thread B, taking 1ms, and run thread B for 100ms more. 1200 + 1 + 100 = 1301ms, which would be the total time elapsed for these operations.
    
    c) Option (b) is more efficient in our opinion because it makes use of the time that A is performing its disk operation by switching to thread B and starting to run it. This way, once all of the looping on thread A is done, there is only 100ms left to do for thread B instead of the full 1000ms.
+
+6. The six different orders the threads can be run in are shown in the photos below of the Gantt charts we made. The orders are as follows: (T1 T2 T3), (T1 T3 T2), (T2 T1 T3), (T2 T3 T1), (T3 T1 T2), (T3 T2 T1).
+
