@@ -15,3 +15,5 @@
 6. The six different orders the threads can be run in are shown in the photos below of the Gantt charts we made. The orders are as follows: (T1 T2 T3), (T1 T3 T2), (T2 T1 T3), (T2 T3 T1), (T3 T1 T2), (T3 T2 T1).
 
 ![gantt123](https://user-images.githubusercontent.com/31746937/52171954-eec48400-271a-11e9-8004-d084bf67524d.jpg)
+
+![gantt132](https://user-images.githubusercontent.com/31746937/52171956-13206080-271b-11e9-9257-749e212cb3f1.jpg)
