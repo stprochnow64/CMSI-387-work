@@ -2,7 +2,7 @@
 
 2. The relationship between threads and processes is as follows. They are both independent sequences of execution, but threads run in a shared memory space (same address) while processes do not. Processes are used for larger tasks and threads are used for smaller ones. Threads can come from multiple sources; they can come from multiple independent processes or from the same process, in which case that process would be a multithreaded process.
 
-3. We are most looking forward to learning about: We have found the capability of an operating system to run multiple threads at the same time and switch threads to maximize efficiency and resource utilization to be the most interesting topic so far. We are looking forward to learning more about it and how to try and implement this capability ourselves in the projects we do in class.
+3. We have found the capability of an operating system to run multiple threads at the same time and switch threads to maximize efficiency and resource utilization to be the most interesting topic so far. We are looking forward to learning more about it and how to try and implement this capability ourselves in the projects we do in class.
 
 4. a) Thread A takes a total of 1100ms because each disk operation takes 10ms and each computation takes 1ms. 10 + 1 = 11 and 11 * 100 (the amount of times it loops) = 1100ms. Then it takes 1ms to switch to thread B. 1100 + 1 = 1101ms. And then 1 second (1000ms) to run thread B. The total time would be 2101ms.
 
