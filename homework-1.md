@@ -25,3 +25,5 @@
 ![gantt312](https://user-images.githubusercontent.com/31746937/52171978-68f50880-271b-11e9-9683-569d1b948f3d.jpg)
 
 ![gantt321](https://user-images.githubusercontent.com/31746937/52171991-99d53d80-271b-11e9-894a-e04aaa3d168f.jpg)
+
+The order with the mininum average turnover time is T1 T2 T3, shown in the first Gantt chart. The scheduling policy that gives us this order is the Shortest Job First scheduling policy. The average turnaround time is minimized when the shortest job is processed first and so on. 
