@@ -17,3 +17,5 @@
 ![gantt123](https://user-images.githubusercontent.com/31746937/52171954-eec48400-271a-11e9-8004-d084bf67524d.jpg)
 
 ![gantt132](https://user-images.githubusercontent.com/31746937/52171956-13206080-271b-11e9-9257-749e212cb3f1.jpg)
+
+![gantt213](https://user-images.githubusercontent.com/31746937/52171967-2c291180-271b-11e9-8cbe-b874e71abc0f.jpg)
