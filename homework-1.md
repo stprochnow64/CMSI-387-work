@@ -10,7 +10,7 @@ The relationship between threads and processes is as follows. They are both inde
 
 3. **Of all the topics previewed in chapter one of the text book, which one are you most looking forward to learning more about? Why?**
 
-We have found the capability of an operating system to run multiple threads at the same time and switch threads to maximize efficiency and resource utilization to be the most interesting topic so far. We are looking forward to learning more about it and how to try and implement this capability ourselves in the projects we do in class.
+We are most looking forward to learning about security. It is something we have not yet learned in any of our previous classes, but we think it is very important to know about this topic. We are excited to learn about the conflicting objectives of system owners and adversaries. 
 
 4. **Suppose thread A goes through a loop 100 times, each time performing one disk I/O operation, taking 10 milliseconds, and then some computation, taking 1 millisecond. While each 10-millisecond disk operation is in progress, thread A cannot make any use of the processor. Thread B runs for 1 second, purely in the processor, with no I/O. One millisecond of processor time is spent each time the processor switches threads; other than this switching cost, there is no problem with the processor working on thread B during one of thread A's I/O operations.**
 
