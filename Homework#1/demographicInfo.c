@@ -27,5 +27,5 @@ int main( int argc, char ** argv ) {
   printf("How are you feeling today? ");
   scanf("%s", mood);
 
-  printf("\nName: %s \nAge: %d \nClass Year: %d \nMajor: %s \nHometown: %s\nMood: %s\n", name, age, class_year, major, hometown, mood);
+  printf("\nName: %s \nAge: %d \nClass Year: %d \nMajor: %s \nHometown: %s\nMood: %s\n\n", name, age, class_year, major, hometown, mood);
 }
