@@ -47,3 +47,38 @@ The six different orders the threads can be run in are shown in the photos below
 The order with the mininum average turnover time is T1 T2 T3, shown in the first Gantt chart. The scheduling policy that gives us this order is the Shortest Job First scheduling policy. The average turnaround time is minimized when the shortest job is processed first and so on. 
 
 7. **Google the C standard library API and find out how to get information from the command line by using a printf() call to display a prompt, then another call [which you will look up] to get the user input. Write a program in C to prompt the user demographic information including name, age, class year, and any three other data times you wish. Structure the program as a call-and-response program such that each data item is a single question with a single answer. When all data has been obtained, display the data on the console. Each data item must be on a separate line, and it must be appropriately labeled. The output must be done using a single printf() statement.**
+
+   ```c
+   #include <string.h>
+   #include <stdio.h>
+
+   int main( int argc, char ** argv ) {
+     char name[37];
+     int age;
+     int class_year;
+     char major[37];
+     char hometown[37];
+     char mood[37];
+
+     printf("What is your name? ");
+     scanf("%s", name);
+
+     printf("How old are you? ");
+     scanf("%d", &age);
+
+     printf("What is your class year? ");
+     scanf("%d", &class_year);
+
+     printf("What is your major? ");
+     scanf("%s", major);
+
+     printf("Where are you from? ");
+     scanf("%s", hometown);
+
+     printf("How are you feeling today? ");
+     scanf("%s", mood);
+
+     printf("\nName: %s \nAge: %d \nClass Year: %d \nMajor: %s \nHometown: %s\nMood: %s\n", name, age, class_year, major, hometown, mood);
+   }
+   ```
+
