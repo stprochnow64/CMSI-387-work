@@ -27,6 +27,37 @@ Thread A's disk operation takes 10ms. 1 of those ms is used to switch from A to 
 Option (b) is more efficient in our opinion because it makes use of the time that A is performing its disk operation by switching to thread B and starting to run it. This way, once all of the looping on thread A is done, there is only 100ms left to do for thread B instead of the full 1000ms.
    
 5. **Find and read the documentation for pthread_cancel(). Then, using your C programming environment, use the information and the model provided in Figure 2.4 on page 26 of the text book to write a program in which the initial (main) thread creates a second thread. The main thread should read input from the keyboard, waiting until the user presses the Enter key. At that point, it should kill off the second thread and print out a message reporting that it has done so. Meanwhile, the second thread should be in an infinite loop, each time around sleeping five seconds and then printing out a message. Try running your program. Can the sleeping thread print its periodic messages while the main thread is waiting for keyboard input? Can the main thread read input, kill the sleeping thread, and print a message while the sleeping thread is in the early part of one of its five-second sleeps?**
+```c
+#include <pthread.h>
+#include <unistd.h>
+#include <stdio.h>
+
+static void *second(void *ignored){
+    while(1) {
+        sleep(5);
+        printf("Hello world, I'm a thread!\n");
+    }
+    return NULL;
+}
+
+int main(int argc, char *argv[]){
+   pthread_t second_thread;
+   int code;
+   code = pthread_create(&second_thread, NULL, second, NULL);
+   if(code){
+      fprintf(stderr, "pthread_create failed with code %d\n", code);
+   }
+   char user_input[100];
+   scanf("%s", user_input);
+   int code2;
+   code2 = pthread_cancel(second_thread);
+   if (code2 == 0){
+       printf("Second thread has been killed. Do you copy? RIP. Over and out.\n");
+   }
+   return 0;
+}
+```
+Yes the sleeping thread can print messages while the main thread is waiting for input, but once the main thread has received that input the second thread is killed off. The main thread can kill the sleeping thread while it is in the early part of one of its sleeps.
 
 6. **Suppose a system has three threads (T1, T2, and T3) that are all available to run at time 0 and need one, two, and three seconds of processing, respectively. Suppose each thread is run to completion before starting another. Draw six different Gantt charts, one for each possible order the threads can be run in. or each chart, compute the turnaround time of each thread; that is, the time elapsed from when it was ready (time 0) until it is complete. Also, compute the average turnaround time for each order. Which order has the shortest average turnaround time? What is the name of the scheduling policy that produces this order?**
 
