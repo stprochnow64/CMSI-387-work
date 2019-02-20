@@ -1,17 +1,17 @@
-Fletcher/Higgins/Patterson
+Flora/Jay/Prochnow
 
 CMSI 387 Operating Systems
 	Semester Project
 ===================================
 
-OMG, this is a GREAT idea!!  Everyone gets so focused on being
-serious about this stuff, it's refreshing to see a group take a
-different tack on things.
+Sorry about the mix-up ----
 
-Will there perhaps be a switch of some kind that will allow the
-user to put the system into and take it out of the new mode?
+This is a really cool idea!  Where will you get the horoscope
+data from?  Will it be randomly generated?  Good idea to have
+the command calculate the sign from the birthdate.
 
-I'm really excited about this....
+
+I'm really excited about this one, too!
 
 Project approved.  Good work and good luck!
 
