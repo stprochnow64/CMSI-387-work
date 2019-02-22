@@ -9,6 +9,7 @@ int main (int argc, char* argv[]) {
   arr = malloc(sizeof(int)*arraySize);
 
   for (int i = 0; i < arraySize; i++) {
+    srand(time(NULL));
     arr[i] = rand() % 100 + 1;
   }
   int valueRetrieved = arr[4096];
