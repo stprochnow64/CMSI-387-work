@@ -1,3 +1,8 @@
+**1.**
+In the mutex-locking pseudocode of Figure 4.10 on page 111, there are two consecutive steps that remove the current thread from the runnable threads and then unlock the spinlock. Because spinlocks should be held as briefly as possible, we ought to consider whether these steps could be reversed, as shown in Figure 4.28 [on page 148]. Explain why reversing them would be a bad idea by giving an example sequence of events where the reversed version malfunctions.
+
+
+
 **2.**
 By deleting the line *State snapshot = state.get();*, this creates a bug because the audit does not check the current state of ticket buying, thus reflecting an inaccurate number. Say the audit function were run while a person were in the middle of purchasing a ticket, the seats remaining would not accurately reflect the amount of cash on hand, since the transaction has not been completed. Thus, we would get an inaccurate audit because it is reading the amounts in the middle of a transaction.
 
