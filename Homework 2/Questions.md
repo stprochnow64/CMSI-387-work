@@ -20,4 +20,4 @@ There are 10 processes currently running while the program is sleeping, 8 of whi
 
 The family tree looks like
 
-![alt text](https://github.com/stprochnow64/CMSI-387-work/blob/master/Homework%202/Screen%20Shot%202019-03-05%20at%206.38.28%20PM.png)
+![alt text](https://github.com/stprochnow64/CMSI-387-work/blob/master/Homework%202/Screen%20Shot%202019-03-07%20at%2011.47.31%20AM.png)
