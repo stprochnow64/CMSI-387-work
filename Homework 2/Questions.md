@@ -1,4 +1,5 @@
-
+**2.**
+By deleting the line *State snapshot = state.get();*, this creates a bug because the audit does not check the current state of ticket buying, thus reflecting an inaccurate number. Say the audit function were run while a person were in the middle of purchasing a ticket, the seats remaining would not accurately reflect the amount of cash on hand, since the transaction has not been completed. Thus, we would get an inaccurate audit because it is reading the amounts in the middle of a transaction.
 
 **8.**
 When beginning on this assignment, created a simple program shown below:
