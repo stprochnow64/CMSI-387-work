@@ -2,12 +2,14 @@
 In the mutex-locking pseudocode of Figure 4.10 on page 111, there are two consecutive steps that remove the current thread from the runnable threads and then unlock the spinlock. Because spinlocks should be held as briefly as possible, we ought to consider whether these steps could be reversed, as shown in Figure 4.28 [on page 148]. Explain why reversing them would be a bad idea by giving an example sequence of events where the reversed version malfunctions.
 
 
-
 **2.**
 By deleting the line *State snapshot = state.get();*, this creates a bug because the audit does not check the current state of ticket buying, thus reflecting an inaccurate number. Say the audit function were run while a person were in the middle of purchasing a ticket, the seats remaining would not accurately reflect the amount of cash on hand, since the transaction has not been completed. Thus, we would get an inaccurate audit because it is reading the amounts in the middle of a transaction.
 
 **6.**
 The virtual addresses of the first and last 4-byte words in page 6 are 12289 and 16384. They translate into the physical address of the first and last words in page frame 3. 
+
+**7.**
+1024 page-table entries fit within one page-sized portion of the table. These 1024 entries have second level page directories pointing to them and each chunk in that page directory also has 1024 entries. Figure 6.13 shows a page directory with the last entry pointing to a page table. This last entry would contain pages 1047552-1048575 (1024 entries with 1024 pages = 1024x1023 since 0 is used as first page). Since this range of pages is held in that page directory, the page table will contain an entry for each of those 1024 pages. From the page table, the numbers 1047552 and 1047553 are the first 2 pages in the page table range from the last entry in the page directory in the figure. 
 
 **8.**
 When beginning on this assignment, created a simple program shown below:
