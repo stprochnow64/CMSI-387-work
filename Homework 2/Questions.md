@@ -6,9 +6,11 @@ Reversing the steps could be a bad idea because it can create buggy code. You ne
 By deleting the line *State snapshot = state.get();*, this creates a bug because the audit does not check the current state of ticket buying, thus reflecting an inaccurate number. Say the audit function were run while a person were in the middle of purchasing a ticket, the seats remaining would not accurately reflect the amount of cash on hand, since the transaction has not been completed. Thus, we would get an inaccurate audit because it is reading the amounts in the middle of a transaction.
 
 **5.**
-two-phase locking: Yes this is possible becasue two-phase locking uses an undo log which which records the actions needed to back out of the changes that a transaction has made to the system's state. Each time a new value is written into some stored entity, it also adds an entry to the undo log which shows how the entity can be restored to its prior state. 
-read committed isolation level: Read operations use a shared lock which is acquired before each read, and is released immediately after. Transactions that are writing will hold the lock exclusively, but transactions that are only reading can get access easily and still be assured that they will not be reading data that is still being written. Therefore, this is possible becasue transactions can get access easily. 
-snapshot isolation: Here, every write stores a new value of an entity in a different location than the old value. Any reads will only read the most recently committed value. Therefore, T2 will not see the old value for x. Any writes that have been done since the writes T1 makes are completely ignored.
+Two-phase locking: Yes this is possible becasue two-phase locking uses an undo log which which records the actions needed to back out of the changes that a transaction has made to the system's state. Each time a new value is written into some stored entity, it also adds an entry to the undo log which shows how the entity can be restored to its prior state. 
+
+Read committed isolation level: Read operations use a shared lock which is acquired before each read, and is released immediately after. Transactions that are writing will hold the lock exclusively, but transactions that are only reading can get access easily and still be assured that they will not be reading data that is still being written. Therefore, this is possible becasue transactions can get access easily. 
+
+Snapshot isolation: Here, every write stores a new value of an entity in a different location than the old value. Any reads will only read the most recently committed value. Therefore, T2 will not see the old value for x. Any writes that have been done since the writes T1 makes are completely ignored.
 
 **6.**
 The virtual addresses of the first and last 4-byte words in page 6 are 12289 and 16384. They translate into the physical address of the first and last words in page frame 3. 
