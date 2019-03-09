@@ -1,5 +1,5 @@
 **1.**
-In the mutex-locking pseudocode of Figure 4.10 on page 111, there are two consecutive steps that remove the current thread from the runnable threads and then unlock the spinlock. Because spinlocks should be held as briefly as possible, we ought to consider whether these steps could be reversed, as shown in Figure 4.28 [on page 148]. Explain why reversing them would be a bad idea by giving an example sequence of events where the reversed version malfunctions.
+Reversing the steps could be a bad idea because it can create buggy code. You need to remove the current thread from the runnable threads before unlocking the mutex. For example, if you unlock the mutex before removing the current thread from the runnable threads, it is possible that that thread would be run again before another thread gets to go, which causes malfunctions.
 
 
 **2.**
