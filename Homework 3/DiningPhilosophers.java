@@ -10,6 +10,7 @@ philosopher will check the same one as one who is sitting next to them. If the
 lower one is open but the higher one is not, the philosopher will put the fork
 down and wait a random amount of time before trying again.
 */
+import java.util.Random;
 public class DiningPhilosophers{
 
 	public static void main(String[] args){
@@ -57,7 +58,6 @@ class Philosopher extends Thread {
 	public void eat() {
 		if( ! leftFork.used ){
 			if( !rightFork.used ){
-
 				leftFork.take();
 				rightFork.take();
 				System.out.println(name + " : Eat");
@@ -68,6 +68,7 @@ class Philosopher extends Thread {
 
 				rightFork.drop();
 		 		leftFork.drop();
+
 			} leftFork.drop();
         pause();
 		}
@@ -75,10 +76,12 @@ class Philosopher extends Thread {
 	}
 
 	public void pause(){
+      Random rand = new Random();
+      int randInt = rand.nextInt(1000);
 		 	this.state = 1;
 		 	System.out.println(name + " : pause");
       try{
-        Thread.sleep(1000);
+        Thread.sleep(randInt);
       }
       catch(InterruptedException ex){ }
 	}
