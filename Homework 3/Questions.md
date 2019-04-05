@@ -1,2 +1,2 @@
 **5.**
-
+The Java class that would be the most useful for storing the messages would be the BoundedBuffer class. This class can accept the messages from the receive method and keep them in temporary holding so that the receive method can drop off the data and return to receive more messages. The bounded buffer also allows for holding such that the thread running in the loop that retrieves the messages will be able to continually loop through the messages stored in the bounded buffer until it is empty, and then pause until the buffer has a new message added to it to continue the process. 
