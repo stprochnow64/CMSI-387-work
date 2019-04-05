@@ -3,10 +3,12 @@
 /*  This program is immune to deadlock through resource ordering. Assuming each
 fork is numbered from 0 - 4, the program ensures that each philosopher looks
 at the availability of the lowest numbered fork first. If that fork is not
-available, the philosopher then drops the low numbered fork, waits, and tries
-again. There will be no deadlock because there will be no instance that every
-philosopher will be holding one fork because each philosopher will check the
-same one as one who is sitting next to them.
+available, the philosopher then drops the low numbered fork, waits for a random
+amount of time, and tries again. There will be no deadlock because there will be
+no instance that every philosopher will be holding only one fork because each
+philosopher will check the same one as one who is sitting next to them. If the 
+lower one is open but the higher one is not, the philosopher will put the fork
+down and wait a random amount of time before trying again.
 */
 public class DiningPhilosophers{
 
