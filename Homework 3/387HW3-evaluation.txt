@@ -4,21 +4,22 @@ CMSI 387 - Operating Systems
 ============================
 
 Question 1: dining philosophers program:   20.00 points out of 20 possible
-Question 2: why immune explanation     :   00.00 points out of 10 possible
+Question 2: why immune explanation     :   10.00 points out of 10 possible
 Question 3: file processing "C" program:   15.00 points out of 20 possible
 Question 4: mmap program "C" program   :   20.00 points out of 20 possible
 Question 5: appropriate class explained:   10.00 points out of 10 possible
 
 Total possible points:     80.00 points
-           your score:     65.00 points
-       homework total:     65.00/80.00 = 81.25% which is a B-minus
+           your score:     75.00 points
+       homework total:     75.00/80.00 = 93.75% which is an A-minus
 
 Comments:
 ---------
 Nice job on the Philosophers!  Good explanation for #5 as well.
 
-I don't see an answer for #2.  If you'll get that committed this week, I'll
-add it in to the evaluation to get points back.
+Corrected!  sorry about that.....
+[I don't see an answer for #2.  If you'll get that committed this week, I'll
+add it in to the evaluation to get points back.]
 
 Very close on #3.  You need to close the STDOUT_FILENO and then when you open
 the "/etc/passwd" it will become the new input stream to your "tr" command.  I
@@ -29,9 +30,9 @@ Nice work!
 Semester so far:
 
    homework01 @ 10%:  100.00% = 10.00 points
-   homework02 @ 10%:   65.00% =  6.50 points
+   homework02 @ 10%:   93.75% =  9.38 points
    homework03 @ 10%:   81.25% =  8.13 points
    particip.  @ 10%:  100.00% = 10.00 points
    proj pt. 1 @ 20%:  100.00% = 20.00 points
 
-       total points:  54.63 out of 60.00 = 91.05% which is an A-minus
+       total points:  57.51 out of 60.00 = 95.85% which is an A
