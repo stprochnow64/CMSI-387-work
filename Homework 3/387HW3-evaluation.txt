@@ -30,9 +30,9 @@ Nice work!
 Semester so far:
 
    homework01 @ 10%:  100.00% = 10.00 points
-   homework02 @ 10%:   93.75% =  9.38 points
-   homework03 @ 10%:   81.25% =  8.13 points
+   homework02 @ 10%:   95.00% =  9.50 points
+   homework03 @ 10%:   93.75% =  9.38 points
    particip.  @ 10%:  100.00% = 10.00 points
    proj pt. 1 @ 20%:  100.00% = 20.00 points
 
-       total points:  57.51 out of 60.00 = 95.85% which is an A
+       total points:  58.88 out of 60.00 = 98.13% which is an A-plus
